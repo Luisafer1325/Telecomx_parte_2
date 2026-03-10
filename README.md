@@ -1,100 +1,106 @@
 # Telecomx_parte_2
-Predicción de Cancelación de Clientes (Customer Churn)
-Descripción del Proyecto
+# 📊 TelecomX - Análisis de Cancelación de Clientes (Churn)
 
-Este proyecto tiene como objetivo analizar los factores que influyen en la cancelación de clientes en una empresa de telecomunicaciones y construir modelos de machine learning capaces de predecir qué clientes tienen mayor probabilidad de cancelar el servicio.
+Análisis de cancelación de clientes (Churn) en una empresa de telecomunicaciones utilizando **Python, análisis exploratorio de datos y modelos de machine learning**.
 
-A través de técnicas de análisis de datos y aprendizaje automático, se busca identificar patrones en el comportamiento de los clientes y proponer estrategias que ayuden a mejorar la retención.
+---
 
-Objetivos
+## 📌 Descripción
 
-Analizar el comportamiento de los clientes.
+Este proyecto analiza la **cancelación de clientes (Churn)** en una empresa de telecomunicaciones con el objetivo de identificar los factores que influyen en la pérdida de clientes.
 
-Identificar variables que influyen en la cancelación del servicio.
+A través de **análisis exploratorio de datos (EDA)** y **modelos de machine learning**, se busca encontrar patrones que permitan predecir qué clientes tienen mayor probabilidad de cancelar el servicio.
 
-Construir modelos predictivos de churn.
+Este tipo de análisis permite a las empresas implementar **estrategias de retención más efectivas**.
 
-Evaluar el rendimiento de diferentes modelos de machine learning.
+---
 
-Dataset
+## 🛠 Tecnologías utilizadas
 
-El dataset utilizado contiene información de clientes de una empresa de telecomunicaciones, incluyendo variables como:
+* 🐍 Python
+* 📊 Pandas
+* 📉 NumPy
+* 📈 Matplotlib
+* 🎨 Seaborn
+* 🤖 Scikit-learn
+* 📓 Google Colab / Jupyter Notebook
 
-Tiempo de permanencia del cliente (tenure)
+---
 
-Gasto mensual
+## 🔍 Análisis realizado
 
-Tipo de servicios contratados
+El proyecto incluye las siguientes etapas de análisis de datos:
 
-Información demográfica del cliente
+* Extracción y carga de datos
+* Limpieza y preparación de datos
+* Eliminación de variables irrelevantes
+* Transformación de variables categóricas (One-Hot Encoding)
+* Análisis exploratorio de datos (EDA)
+* Matriz de correlación entre variables
+* Visualización de patrones relacionados con la cancelación
 
-Cancelación del servicio (Churn)
+---
 
-Tecnologías Utilizadas
+## 🤖 Modelos de Machine Learning
 
-Python
+Se implementaron dos modelos para predecir la cancelación de clientes:
 
-Pandas
+**1️⃣ Regresión Logística**
 
-NumPy
+* Modelo sensible a la escala de los datos
+* Se aplicó normalización utilizando `StandardScaler`
 
-Matplotlib
+**2️⃣ Random Forest**
 
-Seaborn
+* Modelo basado en árboles de decisión
+* No requiere normalización de los datos
 
-Scikit-learn
+---
 
-Google Colab / Jupyter Notebook
+## 📊 Evaluación de los Modelos
 
-Etapas del Proyecto
-1. Limpieza y Preparación de Datos
+Los modelos fueron evaluados utilizando métricas de clasificación:
 
-Eliminación de columnas irrelevantes
+* Exactitud (Accuracy)
+* Precisión (Precision)
+* Recall
+* F1-score
+* Matriz de confusión
 
-Tratamiento de valores nulos
+Esto permitió comparar el rendimiento de ambos modelos y analizar su capacidad para predecir la cancelación de clientes.
 
-Transformación de variables categóricas (One-Hot Encoding)
+---
 
-2. Análisis Exploratorio de Datos (EDA)
+## 📈 Principales hallazgos
 
-Distribución de la cancelación de clientes
+A partir del análisis realizado se identificaron algunos factores importantes relacionados con la cancelación:
 
-Matriz de correlación
+* Los clientes con **mayores cargos mensuales** presentan mayor probabilidad de cancelar.
+* Los clientes con **menor tiempo de permanencia (tenure)** tienen mayor churn.
+* Algunas características del servicio contratado influyen en la permanencia del cliente.
 
-Visualización de variables relevantes
+---
 
-3. Modelado Predictivo
+## 🚀 Recomendaciones
 
-Se implementaron dos modelos de machine learning:
+Basado en los resultados obtenidos, se sugieren algunas estrategias para reducir la cancelación:
 
-Regresión Logística
+* Incentivar **contratos de mayor duración**.
+* Implementar **programas de fidelización para clientes nuevos**.
+* Identificar clientes con **alto riesgo de cancelación** mediante modelos predictivos.
+* Ofrecer promociones o beneficios personalizados para mejorar la retención.
 
-Random Forest
+---
 
-4. Evaluación de Modelos
+## 📂 Estructura del Proyecto
 
-Los modelos fueron evaluados utilizando:
+```
+TelecomX-Churn-Analysis
+│
+├── Telecom_x_Parte_2.ipynb
+├── TelecomX_tratado.csv
+└── README.md
+```
 
-Accuracy
+Proyecto de análisis de datos enfocado en **predicción de cancelación de clientes (Customer Churn)** utilizando técnicas de **Data Analysis y Machine Learning**.
 
-Precision
-
-Recall
-
-F1-score
-
-Matriz de confusión
-
-Resultados
-
-El análisis permitió identificar variables importantes relacionadas con la cancelación, como el tiempo de permanencia del cliente y el gasto mensual. Los modelos predictivos demostraron ser útiles para anticipar qué clientes tienen mayor probabilidad de cancelar el servicio.
-
-Posibles Mejoras
-
-Probar más modelos como XGBoost o SVM.
-
-Realizar optimización de hiperparámetros.
-
-Implementar técnicas de balanceo de datos.
-
-Desarrollar un dashboard para visualizar resultados.
